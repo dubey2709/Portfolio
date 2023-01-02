@@ -52,7 +52,7 @@ class _ConnectState extends State<Connect> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Connect with Me 😎',
+          Text('Connect with Me',
               textScaleFactor: 1,
               style: style1.copyWith(fontSize: 0.021 * width)),
           SizedBox(height: 0.014 * width),
