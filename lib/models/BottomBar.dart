@@ -122,7 +122,7 @@ class _BottomBarState extends State<BottomBar> {
                           text: ' and Deployed on',
                           style: style2.copyWith(fontSize: 0.013 * width)),
                       TextSpan(
-                          text: ' Netlify',
+                          text: ' Vercel',
                           style: style2.copyWith(
                               fontSize: 0.013 * width,
                               color: Color(0xFF26B072))),
