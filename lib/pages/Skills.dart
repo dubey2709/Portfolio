@@ -52,7 +52,7 @@ class Skills extends StatelessWidget {
             : Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Skills / Tools 💻',
+                  Text('Skills / Tools',
                       textScaleFactor: 1,
                       style: style1.copyWith(fontSize: 0.021 * width)),
                   SizedBox(height: 0.014 * width),

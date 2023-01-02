@@ -42,7 +42,7 @@ class _AboutState extends State<About> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('About 🙋🏻‍♂️',
+          Text('About',
               textScaleFactor: 1,
               style: style1.copyWith(fontSize: 0.021 * width)),
           SizedBox(height: 0.014 * width),

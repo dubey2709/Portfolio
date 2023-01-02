@@ -21,7 +21,7 @@ class _EducationState extends State<Education> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Education 🎓',
+            'Education',
             style: style1.copyWith(fontSize: 0.021 * width),
           ),
           SizedBox(height: 0.007 * width),

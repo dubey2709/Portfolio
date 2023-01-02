@@ -19,7 +19,7 @@ class Projects extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Projects 📱',
+          Text('Projects',
               textScaleFactor: 1,
               style: style1.copyWith(fontSize: 0.021 * width)),
           SizedBox(height: 0.010 * width),
