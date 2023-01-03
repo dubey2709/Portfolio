@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Portfolio',
+      title: 'Pranjal Dubey',
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );

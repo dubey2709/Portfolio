@@ -80,16 +80,29 @@ class _HomeState extends State<Home> {
                       fontSize: 0.042 * width,
                       color: white,
                       fontWeight: FontWeight.bold),
-                  child: AnimatedTextKit(
-                    isRepeatingAnimation: false,
-                    animatedTexts: [
-                      TypewriterAnimatedText('Pranjal Dubey.',
-                          speed: Duration(milliseconds: 500)),
-                    ],
-                    onTap: () {
-                      print("Tap Event");
-                    },
-                  ),
+                  child: FutureBuilder(
+                      future: Future.delayed(Duration(milliseconds: 1300)),
+                      builder: (context, snapshot) {
+                        if (snapshot.connectionState == ConnectionState.done) {
+                          return AnimatedTextKit(
+                            isRepeatingAnimation: false,
+                            animatedTexts: [
+                              TypewriterAnimatedText('Pranjal Dubey.',
+                                  speed: Duration(milliseconds: 300)),
+                            ],
+                            onTap: () {
+                              print("Tap Event");
+                            },
+                          );
+                        } else {
+                          return SizedBox(
+                            child: Text(
+                              '',
+                              style: TextStyle(fontSize: 0.042 * width),
+                            ),
+                          );
+                        }
+                      }),
                 ),
               ),
               SizedBox(height: 0.008 * width),
