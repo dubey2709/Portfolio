@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
   Color white = Colors.white;
   Color hoverColor = Colors.teal;
   List<bool> ishover = [false, false, false];
+  int x = 0;
 
   void openLinkedIn() async {
     String url = 'https://www.linkedin.com/in/pranjal-dubey-037040226/';
@@ -80,10 +81,11 @@ class _HomeState extends State<Home> {
                       fontSize: 0.042 * width,
                       color: white,
                       fontWeight: FontWeight.bold),
-                  child: FutureBuilder(
+                  child: x==0?FutureBuilder(
                       future: Future.delayed(Duration(milliseconds: 1300)),
                       builder: (context, snapshot) {
                         if (snapshot.connectionState == ConnectionState.done) {
+                          x = 1;
                           return AnimatedTextKit(
                             isRepeatingAnimation: false,
                             animatedTexts: [
@@ -102,7 +104,7 @@ class _HomeState extends State<Home> {
                             ),
                           );
                         }
-                      }),
+                      }):Text('Pranjal Dubey'),
                 ),
               ),
               SizedBox(height: 0.008 * width),
